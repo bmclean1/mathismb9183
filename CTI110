@@ -1,1 +1,21 @@
+# Your Name: Bernadette Mathis Mclean
+# Date: 6/18/2025
+# Assignment Name: Introduction to Python 3
+# A brief description of the project:
+# This assignment tests knowledge of how to write code that collects information from users,
+# processes the information collected, and displays results to other users.
+
+# Exponentiation section
+base = int(input("enter a integer value at the base of: "))
+exponent = int(input("enter integer as the  exponent: "))
+print(f"\n{base} raised to the power of {exponent} is {base ** exponent} !!\n")
+
+# Addition and subtraction section
+print("Addition and subtraction")
+start = int(input("Enter a starting integer:"))
+add = int(input("Enter an integer to add: "))
+subtract = int(input("Enter an integer to subtraction: "))
+result = start + add - subtract
+print(f"\n{start}+{add}+{-subtract} is equal to {result}")
+
 
