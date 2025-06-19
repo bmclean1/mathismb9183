@@ -1,0 +1,40 @@
+# Title: CTI110 P1HW2
+# Your Name: McLean Bernadette
+# Date: 6/18/2025
+# Assignment Name: P1HW2
+# Writing a project program Pseudocode (logic) and adding it as a comment block to the submitted program.
+
+# Pseudocode:
+# 1. Display the purpose of the program
+# 2. Ask user to enter their budget
+# 3. Ask user to enter travel destination
+# 4. Ask user how much they will spend on gas
+# 5. Ask user how much they will spend on accommodation
+# 6. Ask user how much they will spend on food
+# 7. Calculate the total expenses
+# 8. Subtract expenses from budget to get remaining balance
+# 9. Display formatted travel summary and results
+
+# This program calculates and displays travel expenses
+print("This program calculates and displays travel expenses")
+
+# Step 2–6: User input
+budget = float(input("Enter Budget: "))
+destination = input("Enter your travel destination: ")
+gas = float(input("How much do you think you will spend on gas? "))
+accommodation = float(input("Approximately, how much will you need for Accommodation/hotel? "))
+food = float(input("Last, how much do you need for food? "))
+
+# Step 7–8: Expense calculation
+total_expenses = gas + accommodation + food
+remaining_balance = budget - total_expenses
+
+# Step 9: Display results
+print("\n----------------Travel Expenses-----------------")
+print(f"Location: {destination}")
+print(f"Initial Budget: {budget:.2f}")
+print(f"\nFuel: {gas:.2f}")
+print(f"Accommodation: {accommodation:.2f}")
+print(f"Food: {food:.2f}")
+print(f"\nRemaining Balance: {remaining_balance:.2f}")
+
