@@ -1,0 +1,25 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Your Name: Bernadette Mathis Mclean
+... # Date: 6/23/2025
+... # Assignment Name: Introduction to Python 3 Mod 4 P2HW2
+... # This assignment tests knowledge of writing program Pseudocode.
+... grades = [65.5, 88, 78.5, 90, 61, 92]
+...
+... lowest = min(grades)
+... highest = max(grades)
+... total = sum(grades)
+... average = total / len(grades)
+...
+... print("----------Results--------------")
+... print(f"Lowest Grade:    {lowest:.1f}")
+... print(f"Highest Grade:   {highest:.1f}")
+... print(f"Sum of Grades:   {total:.1f}")
+... print(f"Average:         {average:.2f}")
+...
+... ----------Results--------------
+... Lowest Grade:    61.0
+... Highest Grade:   92.0
+... Sum of Grades:   475.0
+... Average:         79.17
+...
