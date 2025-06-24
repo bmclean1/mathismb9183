@@ -1,0 +1,29 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # Your Name: Bernadette Mathis Mclean
+... # Date: 6/23/2025
+... # Assignment Name: Introduction to Python 3 Mod 4 P2LAB2
+...
+... # Create a dictionary of vehicles and their MPG
+... vehicle_mpg = {
+...     'Camaro': 18.21,
+...     'Prius': 52.36,
+...     'Model S': 110,
+...     'Silverado': 26
+... }
+...
+... # Get and display the dictionary keys
+... keys = vehicle_mpg.keys()
+... print(keys)
+...
+... # Prompt user to select a vehicle and display its MPG
+... vehicle = input("Enter a vehicle to see it's mpg: ")
+... mpg = vehicle_mpg[vehicle]
+... print(f"The {vehicle} gets {mpg} mpg")
+...
+... # Prompt for miles and calculate gallons needed
+... miles = float(input(f"How many miles will you drive the {vehicle}? "))
+... gallons_needed = miles / mpg
+... print(f"{gallons_needed:.2f} gallon(s) of gas are needed to drive the {vehicle} {miles:.1f} miles.")
+...
+...
