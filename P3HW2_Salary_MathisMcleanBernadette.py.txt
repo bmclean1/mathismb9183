@@ -1,0 +1,47 @@
+# Title: Branching
+# Name: Bernadette Mathis Mclean
+# Date: 6/26/2025
+# Assignment: Introduction to Python 3 Mod 5 P3HW2_Salary_
+# Description: Test knowledge on writing a program Pseudocode (detail algorithm) and add it as a comment block
+
+------------------------------------------------------------------------
+Pseudocode:
+1. Ask the user to enter employee's name
+2. Ask for number of hours worked this week
+3. Ask for employee's hourly pay rate
+4. If hours worked > 40:
+      - Calculate overtime hours = hours worked - 40
+      - Calculate overtime pay = overtime hours * (1.5 * pay rate)
+      - Calculate regular pay = 40 * pay rate
+   Else:
+      - Overtime hours = 0
+      - Overtime pay = 0
+      - Regular pay = hours worked * pay rate
+5. Calculate gross pay = regular pay + overtime pay
+6. Display: employee name, hours worked, pay rate, overtime hours, 
+   overtime pay, regular pay, and gross pay
+------------------------------------------------------------------------
+
+# Input
+employee_name = input("Enter employee's name: ")
+hours_worked = float(input("Enter number of hours worked: "))
+pay_rate = float(input("Enter employee's pay rate: "))
+
+# Calculations
+if hours_worked > 40:
+    overtime_hours = hours_worked - 40
+    regular_hours = 40
+else:
+    overtime_hours = 0
+    regular_hours = hours_worked
+
+overtime_pay = overtime_hours * (1.5 * pay_rate)
+regular_pay = regular_hours * pay_rate
+gross_pay = regular_pay + overtime_pay
+
+# Output
+print("-------------------------------------")
+print(f"Employee Name: {employee_name}\n")
+print(f"{'Hours worked':<15}{'Pay Rate':<10}{'OverTime':<10}{'OverTime Pay':<15}{'RegHour Pay':<15}{'Gross Pay':<10}")
+print("-" * 79)
+print(f"{hours_worked:<15.1f}{pay_rate:<10.2f}{overtime_hours:<10.1f}{overtime_pay:<15.2f}{regular_pay:<15.2f}{gross_pay:<10.2f}")
