@@ -4,10 +4,14 @@
 # Assignment: Introduction to Python 3 Mod 5 P3HW1
 
 # Collect grades
-grades = []
-for i in range(1, 7):
-    grade = float(input(f"Enter grade for Module {i}: "))
-    grades.append(grade)
+grade1 = float(input("Enter grade for Module 1: "))
+grade2 = float(input("Enter grade for Module 2: "))
+grade3 = float(input("Enter grade for Module 3: "))
+grade4 = float(input("Enter grade for Module 4: "))
+grade5 = float(input("Enter grade for Module 5: "))
+grade6 = float(input("Enter grade for Module 6: "))
+
+# grades = [grade1, grade2, grade3, grade4, grade5, grade6]
 
 # Calculate results
 lowest = min(grades)
@@ -28,11 +32,12 @@ else:
     letter = "F"
 
 # Output results
-print("\n------------Results--------------")
-
-print(f"Lowest Grade: {lowest}")
-print(f"Highest Grade: {highest}")
-print(f"Sum of Grades: {total}")
+print("\n---------- Grade Summary ----------")
+print(f"Lowest Grade: {lowest:.2f}")
+print(f"Highest Grade: {highest:.2f}")
+print(f"Total: {total:.2f}")
 print(f"Average: {average:.2f}")
-print("---------------------------------")
-print(f"Your grade is: {letter}")
+print(f"Letter Grade: {letter}")
+
+
+
