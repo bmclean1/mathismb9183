@@ -1,0 +1,31 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+... # Set up the screen
+... screen = turtle.Screen()
+... screen.bgcolor("lightyellow")
+... screen.title("Square and Triangle with Turtle")
+...
+... # Create the turtle
+... t = turtle.Turtle()
+... t.pensize(3)
+...
+... # Draw a blue square
+... t.color("blue")
+... for _ in range(4):
+...     t.forward(100)
+...     t.left(90)
+...
+... # Reposition the turtle for the triangle
+... t.penup()
+... t.goto(150, 0)  # Move to the right
+... t.pendown()
+...
+... # Draw a red triangle
+... t.color("red")
+... for _ in range(3):
+...     t.forward(100)
+...     t.left(120)
+...
+... # Finish up
+... t.hideturtle()
+... turtle.done()
